@@ -1,107 +1,95 @@
-# Project Management System
-
-A full-stack Project Management System built with React.js, Node.js, Express, MongoDB, and Material-UI. This application allows users to manage projects and tasks with a beautiful dark theme interface.
+# 🧩 Project Management System
+A full-stack **Project Management System** built with **React.js**, **Node.js**, **Express**, **MongoDB**, and **Material-UI**. This application allows users to manage projects and tasks efficiently with a beautiful dark theme interface.
 
 ## 🚀 Features
-
-- **User Authentication** - Register and login system
-- **Project Management** - Create, read, update, and delete projects
-- **Task Management** - Create tasks associated with projects
-- **Responsive Design** - Works on all devices
-- **Dark Theme** - Beautiful Material-UI dark theme
-- **Real-time Updates** - Instant UI updates after operations
-- **Pagination** - Efficient data loading for large datasets
+- 🔐 **User Authentication** – Register and login system  
+- 📁 **Project Management** – Create, read, update, and delete projects  
+- 📝 **Task Management** – Create and manage tasks within projects  
+- 📱 **Responsive Design** – Works seamlessly across all devices  
+- 🌙 **Dark Theme** – Elegant Material-UI dark mode  
+- ⚡ **Real-time Updates** – Instant UI refresh after operations  
+- 📊 **Pagination** – Smooth handling of large datasets  
 
 ## 🛠️ Tech Stack
+### 🎨 Frontend
+- React.js (with TypeScript)
+- Material-UI (MUI)
+- React Hook Form
+- React Router
+- Axios
+- React Toastify
 
-### Frontend
-- React.js with TypeScript
-- Material-UI (MUI) for components
-- React Hook Form for form handling
-- React Router for navigation
-- Axios for API calls
-- React Toastify for notifications
-
-### Backend
-- Node.js with Express.js
-- MongoDB with Mongoose
-- JWT for authentication
-- bcrypt for password hashing
-- CORS for cross-origin requests
+### ⚙️ Backend
+- Node.js with Express.js  
+- MongoDB with Mongoose  
+- JWT for Authentication  
+- bcrypt for Password Hashing  
+- CORS for Cross-Origin Requests  
 
 ## 📋 Prerequisites
-
-Before running this application, make sure you have the following installed:
-- Node.js (v14 or higher)
-- MongoDB (local or MongoDB Atlas)
+Before running this application, ensure the following are installed on your system:
+- [Node.js](https://nodejs.org/) (v14 or higher)  
+- [MongoDB](https://www.mongodb.com/) (Local or Atlas)  
 - npm or yarn
 
-## 🚀 Quick Start
+## ⚡ Quick Start
+### 1️⃣ Clone the Repository
 
-### 1. Clone the Repository  
-
-```bash
-git clone <your-repository-url>
-cd project-management-system
-
-2. Backend Setup
-# Navigate to backend directory
-cd backend
-
-# Install dependencies
-npm install
-
-# Start the backend server
-npm start
-
-The backend server will run on http://localhost:5000
-
-3. Frontend Setup
-bash
+3️⃣ Frontend Setup
 # Navigate to frontend directory (in a new terminal)
-cd frontend
+cd ../Frontend
 
 # Install dependencies
 npm install
 
 # Start the frontend development server
 npm start
-The frontend will run on http://localhost:3000
 
-4. Environment Configuration
-If you don't have a .env file in the backend directory:
 
-bash
+✅ The frontend will run on http://localhost:3000
+
+4️⃣ Environment Configuration
+
+If the .env file is missing in the backend folder:
+
 # Copy the example environment file
 cp .env.example .env
-Then edit the .env file with your MongoDB connection string and other configuration:
 
-env
+
+Then open the .env file and update it with your configuration:
+
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
-5. Admin Seeder (Optional)
-To populate the database with initial admin data:
 
-bash
+5️⃣ Admin Seeder (Optional)
+
+To populate the database with initial admin data, run:
+
 # Navigate to backend directory
-cd backend
+cd Backend
 
 # Run the admin seeder
 node adminSeeder.js
-This will create initial admin users in the database.
+
+
+✅ This will insert initial admin details into your MongoDB database.
 
 🔧 Available Scripts
-Backend Scripts
-npm start - Start the production server
+🖥️ Backend Scripts
 
-npm run dev - Start the development server with nodemon
+npm start – Start the production server
 
-npm test - Run tests
+npm run dev – Start the development server with nodemon
 
-Frontend Scripts
-npm start - Start the development server
+npm test – Run backend tests
 
-npm run build - Build for production
+💻 Frontend Scripts
 
-npm test - Run tests
+npm start – Start the frontend development server
+
+npm run build – Build the project for production
+
+npm test – Run frontend tests
+```bash
+git clone git@github.com:SatyaJaiswal/Project-Management-System.git
